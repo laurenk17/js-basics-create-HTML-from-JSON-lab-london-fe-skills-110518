@@ -49,14 +49,13 @@ document.getElementById("Terminator 2").addEventListener("click", (e) => {
   document.getElementById("description").innerHTML = movies["Terminator 2"].description;
 // document.getElementById("cast").innerHTML = movies["Terminator 2"].cast;
 
- for (let i in movies["Terminator 2"].cast) {
+ for (var i in movies["Terminator 2"].cast) {
   let role = (movies["Terminator 2"].cast[i].role);
-  let content = (movies.Titanic.cast[i].content);
+  let actor = (movies.Titanic.cast[i].actor);
   
   var castTe = document.createElement('p');
-  castTe.innerHTML = username+ "<br><br>" +content;
+  castTe.innerHTML = role+ "<br><br>" +actor;
   document.getElementById("cast").appendChild(castTe);
-
  }
 
 
