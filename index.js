@@ -31,12 +31,12 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
  // document.getElementById("reviews").innerHTML = movies.Titanic.reviews;
  
  for (var i in movies.Titanic.reviews) {
-  let role = (movies.Titanic.reviews[i].username);
-  let actor = (movies.Titanic.reviews[i].);
+  let username = (movies.Titanic.reviews[i].username);
+  let content = (movies.Titanic.reviews[i].content);
   
   var roleTi = document.createElement('p')
   document.body.listSection.cast.appendChild(roleTi)
-  roleTi.innerHTML = role
+  roleTi.innerHTML = 
  
  
  
