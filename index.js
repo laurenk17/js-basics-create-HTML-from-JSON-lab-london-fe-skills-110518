@@ -50,12 +50,12 @@ document.getElementById("Terminator 2").addEventListener("click", (e) => {
 // document.getElementById("cast").innerHTML = movies["Terminator 2"].cast;
 
  for (let i in movies["Terminator 2"].cast) {
-  let role = (movies["Terminator 2"].cast[i].username);
-  let content = (movies.Titanic.reviews[i].content);
+  let role = (movies["Terminator 2"].cast[i].role);
+  let content = (movies.Titanic.cast[i].content);
   
-  var reviewsTi = document.createElement('p');
-  reviewsTi.innerHTML = username+ "<br><br>" +content;
-  document.getElementById("reviews").appendChild(reviewsTi);
+  var castTe = document.createElement('p');
+  castTe.innerHTML = username+ "<br><br>" +content;
+  document.getElementById("cast").appendChild(castTe);
 
  }
 
