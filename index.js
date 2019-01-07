@@ -34,7 +34,7 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
   let content = (movies.Titanic.reviews[i].content);
   
   var reviewsTi = document.createElement('p');
-  reviewsTi.innerHTML = username+content;
+  reviewsTi.innerHTML = username+ " " +content;
   document.getElementById("reviews").appendChild(reviewsTi);
   
   
