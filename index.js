@@ -33,9 +33,10 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
   let username = (movies.Titanic.reviews[i].username);
   let content = (movies.Titanic.reviews[i].content);
   
-  var reviewsTi = document.createElement('p')
-  document.body.listSection.cast.appendChild(roleTi)
-  reviewsTi.innerHTML = username
+  var reviewsTi = document.createElement('p');
+  reviewsTi.innerHTML = username;
+  document.getElementById("reviews").appendChild(roleTi);
+  
   
  
  
