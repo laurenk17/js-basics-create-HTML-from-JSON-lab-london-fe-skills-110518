@@ -31,8 +31,8 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
  // document.getElementById("reviews").innerHTML = movies.Titanic.reviews;
  
  for (var i in movies.Titanic.reviews) {
-  let role = (movies.Titanic.reviews[i]);
-  let actor = (movies.Titanic.reviews[i]);
+  let role = (movies.Titanic.reviews[i].username);
+  let actor = (movies.Titanic.reviews[i].);
   
   var roleTi = document.createElement('p')
   document.body.listSection.cast.appendChild(roleTi)
