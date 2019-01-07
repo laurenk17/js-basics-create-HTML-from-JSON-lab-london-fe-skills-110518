@@ -48,7 +48,6 @@ document.getElementById("Terminator 2").addEventListener("click", (e) => {
   document.getElementById("poster").innerHTML = movies["Terminator 2"].poster;
   document.getElementById("description").innerHTML = movies["Terminator 2"].description;
 // document.getElementById("cast").innerHTML = movies["Terminator 2"].cast;
-
  for (var i in movies["Terminator 2"].cast) {
   let role = (movies["Terminator 2"].cast[i].role);
   let actor = (movies.Titanic.cast[i].actor);
@@ -57,10 +56,14 @@ document.getElementById("Terminator 2").addEventListener("click", (e) => {
   castTe.innerHTML = role+ "<br><br>" +actor;
   document.getElementById("cast").appendChild(castTe);
  }
-
-
  document.getElementById("audienceScore").innerHTML = movies["Terminator 2"].audienceScore;
 // document.getElementById("reviews").innerHTML = movies["Terminator 2"].reviews;
-
+for (let i in movies["Terminator 2"].reviews) {
+  let username = movies["Terminator 2"].reviews[i].username;
+  let content = movies["Terminator 2"].reviews[i].content;
+  var reviewsTe = document.createElement('p');
+  reviewsTe.innerHTML = username + "<br><br>" + content;
+  document.getElementById("reviews").appendChild(reviewsTe)
+}
  document.getElementById("poster").innerHTML = movies["Terminator 2"].poster;
 })
