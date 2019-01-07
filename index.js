@@ -27,10 +27,23 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
  
  
  
- // document.getElementById("audienceScore").innerHTML = movies.Titanic.audienceScore;
+ document.getElementById("audienceScore").innerHTML = movies.Titanic.audienceScore;
+ // document.getElementById("reviews").innerHTML = movies.Titanic.reviews;
+ 
+ for (var i in movies.Titanic.reviews) {
+  let role = (movies.Titanic.reviews[i].role);
+  let actor = (movies.Titanic.cast[i].actor);
+  
+  console.log(role);
+  console.log(actor);
+  
+  var roleTi = document.createElement('p')
+  document.body.listSection.cast.appendChild(roleTi)
+  roleTi.innerHTML = role
  
  
- document.getElementById("reviews").innerHTML = movies.Titanic.reviews;
+ 
+ }
  document.getElementById("poster").innerHTML = movies.Titanic.poster;
 })
 
