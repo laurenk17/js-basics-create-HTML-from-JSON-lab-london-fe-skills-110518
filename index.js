@@ -36,16 +36,9 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
   var reviewsTi = document.createElement('p');
   reviewsTi.innerHTML = username+ "<br><br>" +content;
   document.getElementById("reviews").appendChild(reviewsTi);
-  
-  
- 
- 
- 
  }
  document.getElementById("poster").innerHTML = movies.Titanic.poster;
 })
-
-
 
 
 document.getElementById("Terminator 2").addEventListener("click", (e) => {
