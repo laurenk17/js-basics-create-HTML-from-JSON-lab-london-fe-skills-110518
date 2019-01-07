@@ -16,8 +16,9 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
   console.log(actor);
   
   var roleTi = document.createElement('p')
+   roleTi.innerHTML = role
   document.body.listSection.cast.appendChild(roleTi)
-  roleTi.innerHTML = role
+ 
  
  }
  
