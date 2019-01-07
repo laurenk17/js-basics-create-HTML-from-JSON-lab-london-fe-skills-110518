@@ -33,13 +33,13 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
 })
 
 document.getElementById("Titanic").addEventListener("click", (e) => {
-  document.getElementById("title").innerHTML = movies['Terminator 2'].title
- document.getElementById("genre").innerHTML = movies['Terminator 2']genre
- document.getElementById("filmRating").innerHTML = movies["Terminator 2"]filmRating
-  document.getElementById("poster").innerHTML = movies["Terminator 2"]poster;
-  document.getElementById("description").innerHTML = movies["Terminator 2"]description;
- document.getElementById("cast").innerHTML = movies["Terminator 2"]cast;
- document.getElementById("audienceScore").innerHTML = movies["Terminator 2"]audienceScore;
- document.getElementById("reviews").innerHTML = movies["Terminator 2"]reviews;
- document.getElementById("poster").innerHTML = movies["Terminator 2"]poster;
+  document.getElementById("title").innerHTML = movies['Terminator 2'].title;
+ document.getElementById("genre").innerHTML = movies['Terminator 2'];genre;
+ document.getElementById("filmRating").innerHTML = movies["Terminator 2"];filmRating;
+  document.getElementById("poster").innerHTML = movies["Terminator 2"];poster;
+  document.getElementById("description").innerHTML = movies["Terminator 2"];description;
+ document.getElementById("cast").innerHTML = movies["Terminator 2"];cast;
+ document.getElementById("audienceScore").innerHTML = movies["Terminator 2"];audienceScore;
+ document.getElementById("reviews").innerHTML = movies["Terminator 2"];reviews;
+ document.getElementById("poster").innerHTML = movies["Terminator 2"];poster;
 })
