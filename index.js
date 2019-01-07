@@ -32,7 +32,7 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
  document.getElementById("poster").innerHTML = movies.Titanic.poster;
 })
 
-document.getElementById("Titanic").addEventListener("click", (e) => {
+document.getElementById("Terminator 2").addEventListener("click", (e) => {
   document.getElementById("title").innerHTML = movies['Terminator 2'].title;
  document.getElementById("genre").innerHTML = movies['Terminator 2'];genre;
  document.getElementById("filmRating").innerHTML = movies["Terminator 2"];filmRating;
