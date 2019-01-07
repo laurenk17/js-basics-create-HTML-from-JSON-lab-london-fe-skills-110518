@@ -26,8 +26,8 @@ document.getElementById("Titanic").addEventListener("click", (e) => {
  
  
  
- 
  document.getElementById("audienceScore").innerHTML = movies.Titanic.audienceScore;
+ 
  // document.getElementById("reviews").innerHTML = movies.Titanic.reviews;
  
  for (let i in movies.Titanic.reviews) {
