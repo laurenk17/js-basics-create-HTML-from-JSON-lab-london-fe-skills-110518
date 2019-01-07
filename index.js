@@ -47,8 +47,21 @@ document.getElementById("Terminator 2").addEventListener("click", (e) => {
  document.getElementById("filmRating").innerHTML = movies["Terminator 2"].filmRating;
   document.getElementById("poster").innerHTML = movies["Terminator 2"].poster;
   document.getElementById("description").innerHTML = movies["Terminator 2"].description;
- document.getElementById("cast").innerHTML = movies["Terminator 2"].cast;
+// document.getElementById("cast").innerHTML = movies["Terminator 2"].cast;
+
+ for (let i in movies["Terminator 2"].cast) {
+  let role = (movies["Terminator 2"].cast[i].username);
+  let content = (movies.Titanic.reviews[i].content);
+  
+  var reviewsTi = document.createElement('p');
+  reviewsTi.innerHTML = username+ "<br><br>" +content;
+  document.getElementById("reviews").appendChild(reviewsTi);
+
+ }
+
+
  document.getElementById("audienceScore").innerHTML = movies["Terminator 2"].audienceScore;
- document.getElementById("reviews").innerHTML = movies["Terminator 2"].reviews;
+// document.getElementById("reviews").innerHTML = movies["Terminator 2"].reviews;
+
  document.getElementById("poster").innerHTML = movies["Terminator 2"].poster;
 })
